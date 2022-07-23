@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>model</title>
+    <style>
+        body{
+            position: relative;
+            
+            background:linear-gradient(to right ,#e17055,rgb(254, 254, 255));
+        }
+        .mod{
+            color: white;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: #d63031;
+            height: auto;
+            width: auto;
+            margin: 15px;
+            padding: 5px;
+            cursor: pointer;
+            filter: drop-shadow(8px 8px 10px rgb(133, 133, 134));
+        }
+        .model{
+            
+            display:none ;
+            position: absolute;
+            left: 35%;
+            width: 450px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: #dfe6e9;
+            margin: 15px;
+            padding: 4px;
+            border-radius: 15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #mod1 ,#mod2{
+            opacity: 1 !important;
+        }
+        .model h3 ,p{
+            border-bottom: 1px solid rgb(223, 222, 222);
+            padding: 5px;
+            font-weight:lighter 500;
+            height: 36px;
+        }
+        .model button{
+            float: right;
+            font-weight: bold;
+            padding: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .close ,.save{
+            color: white;
+            margin-right: 5px;
+            background-color: #d63031;
+            border-radius: 5px;
+            font-size: 17px;
+            margin-top: -10px;
+        }
+        #m{
+            display: none;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            width: 100%;height: 100%;
+          /*  opacity: .5;*/
+            background-color: transparent;
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <button class="mod">Model_1</button>        
+        <button class="mod">Model_2</button>
+        <button class="mod">Model_3</button>        
+    </div>
+    
+    <div id="m">
+        <div id="mod1" class="model">
+            <h3>Model_1 title<button class="close">x</button> </h3>
+            <p>you're reading this text in  modal <b>1</b></p>
+            <button class="close">Close</button>
+            <button class="save">Save changes</button>
+        </div>
+            <div id="mod2" class="model">
+                <h3>Model_2 title<button class="close">x</button> </h3>
+                <p> you're reading this text in  modal <b>2</b></p> 
+                <button class="close">Close</button>
+                <button class="save">Save changes</button>
+            </div>
+            <div id="mod3" class="model">
+                    <h3>Model_3 title<button class="close">x</button> </h3>
+                    <p>you're reading this text in  modal <b> 3</b> </p> 
+                    <button class="close">Close</button>
+                    <button class="save">Save changes</button>
+                </div>
+    </div>
+    <div id="txt"></div>
+   
+    <script src="model.js"></script>
+</body>
+</html>
